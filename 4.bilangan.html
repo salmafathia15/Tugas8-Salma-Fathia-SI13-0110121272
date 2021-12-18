@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Menghitung Dua Bilangan</h1>
+    <form action="">
+        <label for="angka1">Angka1</label>
+        <input id="angka1" type="number" placeholder="masukkan angka 1">
+        <br>
+        <br>
+        <label for="angka2">Angka2</label>
+        <input id="angka2" type="number" placeholder="masukkan angka 2">
+        <br>
+        <br>
+        <input type="button" value="hitung" onclick="hitungDuaAngka();">
+        <br>
+        <br>
+        <label for="penjumlahan">Hasil</label>
+        <input id="penjumlahan" type="text">
+    </form>
+</body>
+<script>
+    function hitungDuaAngka() {
+        const angka1 = parseInt(document.getElementById('angka1').value);
+        const angka2 = parseInt(document.getElementById('angka2').value);
+        const penjumlahan = angka1 + angka2;
+        document.getElementById('penjumlahan').value = penjumlahan;
+    }
+</script>
